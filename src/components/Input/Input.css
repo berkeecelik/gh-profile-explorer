@@ -1,0 +1,17 @@
+.name-input {
+  all: unset;
+  font-size: 14px;
+  color: #fff;
+  width: 320px;
+  height: 44px;
+  background: #0a0a0a;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 18px;
+  text-align: start;
+}
+
+.name-input::placeholder {
+  color: #acacac;
+}

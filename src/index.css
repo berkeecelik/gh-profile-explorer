@@ -1,6 +1,25 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Roboto Mono", monospace;
-  display: flex;
   background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
 }

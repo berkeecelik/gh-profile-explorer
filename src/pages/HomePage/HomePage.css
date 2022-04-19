@@ -1,0 +1,23 @@
+.home-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hipo-logo {
+  width: 104px;
+  height: 52px;
+}
+
+.homepage-title {
+  all: unset;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  margin: 40px;
+  color: white;
+}

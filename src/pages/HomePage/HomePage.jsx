@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
-import Input from "../../components/Input/Input";
 import Form from "../../components/Form/Form";
 import "./HomePage.css";
 
@@ -11,9 +10,7 @@ function HomePage() {
 
       <h1 className="homepage-title">Github Profile Explorer</h1>
 
-      <Form>
-        <Input />
-      </Form>
+      <Form />
     </div>
   );
 }

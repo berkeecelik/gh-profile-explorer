@@ -21,7 +21,7 @@ function LoadMoreButton(props) {
         </button>
       );
     } else {
-      return <p>All repos are shown.</p>;
+      return <p className="max-repo">All repos are shown.</p>;
     }
   } else {
     if (showRepo <= 28) {
@@ -31,7 +31,16 @@ function LoadMoreButton(props) {
         </button>
       );
     } else {
-      return <p>--Show All--</p>;
+      return (
+        <a
+          className="view-more"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://github.com/${userData.login}?tab=repositories`}
+        >
+          <div className="view-more-button">View More on GitHub</div>
+        </a>
+      );
     }
   }
 }

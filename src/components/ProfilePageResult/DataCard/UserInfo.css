@@ -1,12 +1,15 @@
 .user-info {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .info-box {
+  width: 102px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 45px;
 }
 
 .info-count {
@@ -17,4 +20,10 @@
 .info-name {
   font-size: 14px;
   color: #acacac;
+}
+
+@media (max-width: 600px) {
+  .user-info {
+    justify-content: space-evenly;
+  }
 }

@@ -18,9 +18,7 @@ function RepoInfo(props) {
         <div className="repo-info">
           <div className="repo-title">{repoTitle}</div>
           <div className="repo-text">
-            {repoDescription
-              ? repoDescription
-              : "No description available for this repo."}
+            {repoDescription ? repoDescription : "No description available."}
           </div>
         </div>
         <div className="repo-star">

@@ -14,3 +14,17 @@
   background-color: #ffffff;
   color: #0a0a0a;
 }
+
+.max-repo {
+  text-align: center;
+}
+
+.view-more {
+  text-align: center;
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.view-more:hover {
+  color: #0da090;
+}

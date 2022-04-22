@@ -1,10 +1,12 @@
 import React from "react";
+import "./LoadMoreButton.css";
 
 function LoadMoreButton(props) {
   const userData = props.userData;
   const showRepo = props.showRepo;
   const setShowRepo = props.setShowRepo;
 
+  console.log(userData);
   console.log(showRepo);
 
   function loadMore() {
@@ -19,7 +21,7 @@ function LoadMoreButton(props) {
         </button>
       );
     } else {
-      return <p>All Repos Shown</p>;
+      return <p>All repos are shown.</p>;
     }
   } else {
     if (showRepo <= 28) {

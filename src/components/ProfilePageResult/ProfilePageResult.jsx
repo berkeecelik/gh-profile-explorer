@@ -1,6 +1,7 @@
 import React from "react";
 import DataCard from "./DataCard/DataCard";
 import RepoCard from "./RepoCard/RepoCard";
+import "./ProfilePageResult.css";
 
 function ProfilePageResult(props) {
   const userData = props.userData;

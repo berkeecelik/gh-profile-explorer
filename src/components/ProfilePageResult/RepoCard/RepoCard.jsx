@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoadMoreButton from "./LoadMoreButton";
 import RepoInfo from "./RepoInfo";
+import "./RepoCard.css";
 
 function RepoCard(props) {
   const repoData = props.repoData;
@@ -19,6 +20,7 @@ function RepoCard(props) {
             repoTitle={eachRepo.name}
             repoDescription={eachRepo.description}
             repoStars={eachRepo.stargazers_count}
+            repoUrl={eachRepo.html_url}
           />
         );
       })}

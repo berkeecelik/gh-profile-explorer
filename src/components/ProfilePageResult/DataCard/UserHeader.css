@@ -1,0 +1,32 @@
+.user-header {
+  position: relative;
+  top: -56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.user-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 18px;
+  line-height: 23.74px;
+  margin-bottom: 5px;
+}
+
+.user-login {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
+}

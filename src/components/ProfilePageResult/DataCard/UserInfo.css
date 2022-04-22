@@ -1,0 +1,20 @@
+.user-info {
+  display: flex;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 45px;
+}
+
+.info-count {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.info-name {
+  font-size: 14px;
+  color: #acacac;
+}

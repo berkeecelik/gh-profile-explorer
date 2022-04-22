@@ -1,6 +1,7 @@
 import React from "react";
 import UserHeader from "./UserHeader";
 import UserInfo from "./UserInfo";
+import "./DataCard.css";
 
 function DataCard(props) {
   const userData = props.userData;
@@ -13,7 +14,7 @@ function DataCard(props) {
         rel="noopener noreferrer"
         href={userData.html_url}
       >
-        View on Github
+        View on Github &#128279;
       </a>
       <UserHeader userData={userData} />
       <UserInfo userData={userData} />

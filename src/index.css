@@ -8,9 +8,10 @@
 
 body {
   font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  line-height: 18.46px;
   background-color: black;
   color: white;
-  width: 100vw;
   height: 100vh;
 }
 

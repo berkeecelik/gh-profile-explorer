@@ -6,9 +6,6 @@ function LoadMoreButton(props) {
   const showRepo = props.showRepo;
   const setShowRepo = props.setShowRepo;
 
-  console.log(userData);
-  console.log(showRepo);
-
   function loadMore() {
     setShowRepo((prevValue) => prevValue + 2);
   }

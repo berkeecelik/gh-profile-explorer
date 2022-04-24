@@ -1,4 +1,5 @@
 import React from "react";
+import NumFormatter from "./NumFormatter";
 import "./UserInfo.css";
 
 function UserInfo(props) {
@@ -11,11 +12,15 @@ function UserInfo(props) {
         <span className="info-name">Repositories</span>
       </div>
       <div className="info-box">
-        <div className="info-count">{data.following}</div>
+        <div className="info-count">
+          <NumFormatter userData={data.following} />
+        </div>
         <span className="info-name">Following</span>
       </div>
       <div className="info-box">
-        <div className="info-count">{data.followers}</div>
+        <div className="info-count">
+          <NumFormatter userData={data.followers} />
+        </div>
         <span className="info-name">Followers</span>
       </div>
     </div>

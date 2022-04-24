@@ -14,7 +14,7 @@ function DataCard(props) {
         rel="noopener noreferrer"
         href={userData.html_url}
       >
-        View on Github &#128279;
+        <span className="url-text">View on Github</span> &#128279;
       </a>
       <UserHeader userData={userData} />
       <UserInfo userData={userData} />

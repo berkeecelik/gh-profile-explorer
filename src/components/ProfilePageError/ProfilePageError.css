@@ -1,0 +1,18 @@
+.error-message {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 14px;
+  background-color: #842323;
+  border: 1px solid #cb7474;
+  border-radius: 4px;
+  max-width: 344px;
+  padding: 21px 18px 21px;
+}
+
+@media (max-width: 600px) {
+  .error-message {
+    position: unset;
+    margin: 30px auto;
+  }
+}

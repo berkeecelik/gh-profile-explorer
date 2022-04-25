@@ -8,25 +8,30 @@ function RepoInfo(props) {
   const repoUrl = props.repoUrl;
 
   return (
-    <a
-      className="repo-link"
-      target="_blank"
-      rel="noopener noreferrer"
-      href={repoUrl}
-    >
-      <div className="repo-container">
-        <div className="repo-info">
-          <div className="repo-title">{repoTitle}</div>
-          <div className="repo-text">
-            {repoDescription ? repoDescription : "No description available."}
+    <li className="repo-list-item">
+      <a
+        className="repo-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={repoUrl}
+      >
+        <div className="repo-container">
+          <div className="repo-info">
+            <div className="repo-title">{repoTitle}</div>
+
+            <div className="repo-text">
+              {repoDescription ? repoDescription : "No description available."}
+            </div>
+          </div>
+
+          <div className="repo-star">
+            <div className="star-count">{repoStars}</div>
+
+            <div className="star-text">Stars</div>
           </div>
         </div>
-        <div className="repo-star">
-          <div className="star-count">{repoStars}</div>
-          <div className="star-text">Stars</div>
-        </div>
-      </div>
-    </a>
+      </a>
+    </li>
   );
 }
 

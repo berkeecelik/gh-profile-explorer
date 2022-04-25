@@ -10,6 +10,7 @@ function ProfilePageResult(props) {
   return (
     <div className="profile-result">
       <DataCard userData={userData} />
+
       <RepoCard userData={userData} repoData={repoData} />
     </div>
   );

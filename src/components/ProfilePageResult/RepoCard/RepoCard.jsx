@@ -12,18 +12,22 @@ function RepoCard(props) {
   return (
     <div className="repo-card">
       <p className="repo-card-title">Repositories</p>
-      {repoData.slice(0, showRepo).map((eachRepo, index) => {
-        return (
-          <RepoInfo
-            repoData={repoData}
-            key={index}
-            repoTitle={eachRepo.name}
-            repoDescription={eachRepo.description}
-            repoStars={eachRepo.stargazers_count}
-            repoUrl={eachRepo.html_url}
-          />
-        );
-      })}
+
+      <ul className="repo-list">
+        {repoData.slice(0, showRepo).map((eachRepo, index) => {
+          return (
+            <RepoInfo
+              repoData={repoData}
+              key={index}
+              repoTitle={eachRepo.name}
+              repoDescription={eachRepo.description}
+              repoStars={eachRepo.stargazers_count}
+              repoUrl={eachRepo.html_url}
+            />
+          );
+        })}
+      </ul>
+
       <LoadMoreButton
         showRepo={showRepo}
         setShowRepo={setShowRepo}

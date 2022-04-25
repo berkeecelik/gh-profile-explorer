@@ -10,8 +10,6 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
 
         <Route path="/user/:userName" element={<ProfilePage />} />
-
-        {/* <Route path="*" element={<ErrPage />} /> */}
       </Routes>
     </BrowserRouter>
   );

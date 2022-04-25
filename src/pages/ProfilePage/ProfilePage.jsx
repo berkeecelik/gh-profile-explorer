@@ -13,7 +13,7 @@ function ProfilePage() {
   const { repoData, repoLoading, repoError } = useFetchRepoData(userName);
 
   if (!error || !repoError) {
-    if (!loading && !repoLoading) {
+    if (!loading && !repoLoading && data && repoData) {
       return (
         <div className="profile-page">
           <ProfilePageResult

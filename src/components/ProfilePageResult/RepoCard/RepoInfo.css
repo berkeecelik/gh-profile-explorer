@@ -1,3 +1,7 @@
+.repo-list-item {
+  list-style: none;
+}
+
 .repo-link {
   font: inherit;
   color: inherit;
@@ -15,7 +19,7 @@
   border-radius: 4px;
   padding: 25px;
   margin-bottom: 15px;
-  transition: color 0.5s, background-color 0.5s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .repo-container:hover,

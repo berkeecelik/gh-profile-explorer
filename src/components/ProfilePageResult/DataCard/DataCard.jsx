@@ -16,7 +16,9 @@ function DataCard(props) {
       >
         <span className="url-text">View on Github</span> &#128279;
       </a>
+
       <UserHeader userData={userData} />
+
       <UserInfo userData={userData} />
     </div>
   );

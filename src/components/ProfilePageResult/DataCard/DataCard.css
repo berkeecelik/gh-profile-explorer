@@ -26,9 +26,7 @@
   .data-card {
     padding: 0 20px 45px;
   }
-}
 
-@media (max-width: 600px) {
   .user-url {
     width: 14px;
     height: 14px;

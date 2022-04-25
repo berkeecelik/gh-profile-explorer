@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function useFetchRepoData(user) {
-  const [repoData, setRepoData] = useState([]);
-  const [repoLoading, setRepoLoading] = useState(true);
+  const [repoData, setRepoData] = useState(null);
+  const [repoLoading, setRepoLoading] = useState(false);
   const [repoError, setRepoError] = useState(null);
 
   useEffect(() => {
+    setRepoLoading(true);
     axios
       .get(`https://api.github.com/users/${user}/repos`)
       .then((response) => {
